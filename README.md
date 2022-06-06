@@ -496,6 +496,28 @@ Shows a clear icon on the right side of the date picker. Clicking on it will cle
     <img src="docs/images/clearable.png" alt="Laravel Flatpickr" width="300px">
 </p>
 
+
+### locale
+**Type:** string
+
+Add locale language localization. Before that it's needed add the proper locale .js src line script in the script.blade.php file in the published vendor dir of the laravel project.
+
+**Example**
+
+For italian language add the following line just next the first `<script src="{{ $url ?? config('flatpickr.js_url') ?? asset('vendor/flatpickr/js/flatpickr.js') }}"></script>` at the script.blade.php file
+
+```html
+<script src="https://npmcdn.com/flatpickr/dist/l10n/it.js"></script>
+```
+
+and add `'locale='it'` at the flatpickr component
+
+```html
+<x-flatpickr locale='it' />
+```
+
+
+
 ## Event Hooks
 
 You can pass all the event hooks present in the `flatpickr` library like `onChange`, `onOpen`, `onClose`, etc. Please check all the hooks available in their [documentation page](https://flatpickr.js.org/events/#hooks).
