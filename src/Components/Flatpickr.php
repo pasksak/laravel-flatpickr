@@ -31,6 +31,7 @@ class Flatpickr extends Component
         public bool $showWeekNumbers = false,
         public bool $time24hr = true,
         public bool $clearable = false,
+        public string $locale = 'en',
     ) {
         $this->id = $this->id ?: Str::random(16);
 
@@ -61,6 +62,7 @@ class Flatpickr extends Component
             'weekNumbers' => $this->showWeekNumbers ?: null,
             'wrap' => $this->clearable ?: null,
             'showMonths' => $this->visibleMonths,
+            'locale' => $this->locale,
         ])
             ->merge($this->firstDayOfWeekConfig())
             ->merge($this->config)
