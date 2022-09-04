@@ -1,8 +1,8 @@
 {
-    "name": "asdh/laravel-flatpickr",
+    "name": "pasksak/laravel-flatpickr",
     "description": "A laravel clone of the javascript flatpickr package",
     "keywords": [
-        "asdh",
+        "pasksak",
         "laravel",
         "laravel-flatpickr"
     ],
@@ -34,13 +34,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Asdh\\LaravelFlatpickr\\": "src",
-            "Asdh\\LaravelFlatpickr\\Database\\Factories\\": "database/factories"
+            "Pasksak\\LaravelFlatpickr\\": "src",
+            "Pasksak\\LaravelFlatpickr\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Asdh\\LaravelFlatpickr\\Tests\\": "tests"
+            "Pasksak\\LaravelFlatpickr\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -58,10 +58,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Asdh\\LaravelFlatpickr\\LaravelFlatpickrServiceProvider"
+                "Pasksak\\LaravelFlatpickr\\LaravelFlatpickrServiceProvider"
             ],
             "aliases": {
-                "LaravelFlatpickr": "Asdh\\LaravelFlatpickr\\Facades\\LaravelFlatpickr"
+                "LaravelFlatpickr": "Pasksak\\LaravelFlatpickr\\Facades\\LaravelFlatpickr"
             }
         }
     },
