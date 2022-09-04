@@ -37,7 +37,7 @@ it("can render scripts", function () {
     test()->blade('<x-flatpickr::script />')
         ->assertSee('flatpickr(')
         ->assertSee('supportedEventNames')
-        ->assertSee('function initializeFlatpickr')
+        ->assertSee('initializeFlatpickr:function')
         ->assertSee('function config')
         ->assertSee('function disableWeekends')
         ->assertSee('function events')
